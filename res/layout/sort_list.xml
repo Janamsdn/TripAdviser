@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bluebkrd" 
+    android:paddingTop="4dp">
+    
+    
+    			<RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp" >
+				<Button
+			    android:id="@+id/btn_back"
+			    style="@style/ButtonTextSmall"
+			    android:background="@drawable/button_blue"
+			    android:clickable="true"
+			    android:shadowColor="@color/red"
+			    android:text="@string/str_btn_back"
+			    android:textSize="14sp" />
+					<TextView
+			    		android:id="@+id/text_trip"
+			     		android:layout_width="wrap_content"
+      			  		android:layout_height="wrap_content"
+			     		android:gravity="center"
+			       		android:layout_marginLeft="15dp"
+                   		android:layout_marginRight="15dp"
+			    		android:text="@string/str_sorted_info"	  
+			    		android:textStyle="bold"
+			    	 	android:layout_below="@+id/btn_back"
+			    		android:textSize="16sp" />
+					<View
+					    android:id="@+id/text_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/text_trip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/blueline" />
+	   			<RelativeLayout
+                    android:id="@+id/ListRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_line"
+                    android:layout_marginTop="10dp" >
+					<ListView
+              	        android:id="@+id/listSLV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"     
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/blueline"
+                        android:dividerHeight="1dp"
+                        android:listSelector="#00000000"
+                        android:scrollbars="vertical"  > 
+                        </ListView>
+					<View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/listSLV"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/blueline" />
+	 	 </RelativeLayout>
+	 
+ 		</RelativeLayout>
+ 
+ </RelativeLayout>
